@@ -2,7 +2,7 @@
 
 ## Descrizione generale
 
-Questa applicazione è un'API REST sviluppata in Spring Boot che fornisce endpoint per l'esecuzione di operazioni CRUD (Create, Read, Update, Delete) su entità come "Autore", "Posizione" e "Persona". Implementa inoltre il sistema di controllo Hibernate Envers per tenere traccia delle revisioni nell'entità "Revisione".
+Questa applicazione è un'API REST sviluppata in Spring Boot che fornisce endpoint per l'esecuzione di operazioni CRUD (Create, Read, Update, Delete) su entità come "Autor", "Localidad" e "Persona". Implementa inoltre il sistema di controllo Hibernate Envers per tenere traccia delle revisioni nell'entità "Revision".
 
 ## Struttura delle cartelle
 
