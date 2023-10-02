@@ -22,7 +22,7 @@ public class Domicilio extends Base{
     @Column (name = "numero")
     private int numero;
 
-    @ManyToOne (optional = false)
+    @ManyToOne (optional = false,fetch = FetchType.EAGER)
     //  optional = false: Este atributo indicamos que la localidad no puede ser nula a la hora de crear un domicilio
     @JoinColumn (name = "fk_localidad")
     private Localidad localidad;

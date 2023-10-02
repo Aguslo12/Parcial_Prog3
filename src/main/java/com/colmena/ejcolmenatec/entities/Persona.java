@@ -29,7 +29,7 @@ public class Persona extends Base {
     private int dni;
 
     // Establecer una relación One-to-One con la entidad Domicilio.
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     // Especificar la columna de unión en la base de datos como "fk_domicilio".
     @JoinColumn(name = "fk_domicilio")
     private Domicilio domicilio;

@@ -30,7 +30,7 @@ public class Libro extends Base {
     @Column (name = "titulo")
     private String titulo;
 
-    @ManyToMany(cascade = CascadeType.REFRESH)
+    @ManyToMany(cascade = CascadeType.REFRESH,fetch = FetchType.EAGER)
     /*
         CascadeType.REFRESH: indica que se debe propagar la operación REFRESH a las entidades secundarias cuando se
         aplica a la entidad principal.
