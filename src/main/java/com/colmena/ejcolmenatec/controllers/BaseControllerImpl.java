@@ -23,6 +23,15 @@ public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceIm
         }
     }
 
+    @GetMapping("/page")
+    public ResponseEntity<?> getAll(Pageable pageable) {
+        try{
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAll(pageable));
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error, por favor intente más tarde.\"}");
+        }
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<?> getOne(@PathVariable Long id){
         try{
